@@ -1,6 +1,6 @@
 //window.addEventListener("load", function(event) {
 
-const swup = new Swup();
+// const swup = new Swup();
 
 window.addEventListener('scroll', e => {
 	document.documentElement.style.setProperty('--scrollTop', `${this.scrollY}px`); // Update method
