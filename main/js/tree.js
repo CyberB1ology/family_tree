@@ -1,7 +1,7 @@
 window.addEventListener("load", function(event) {
 var padding_family = -50;
 
-const swup = new Swup();
+// const swup = new Swup();
 // $(document).ready(function(){
 //   var body = $("body");
 //   body.fadeIn(600);
