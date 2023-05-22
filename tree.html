@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<title>Сімейне Дерево</title>
+
+	<script src="main/js/leader-line.min.js" defer></script>
+	<script src="main/js/swup.min.js" defer></script>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.0/jquery-ui.min.js"></script>
+
+	<script src="main/libs/gsap/gsap.min.js" defer></script>
+	<script src="main/libs/gsap/ScrollTrigger.min.js" defer></script>
+	<script src="main/libs/gsap/ScrollSmoother.min.js" defer></script>
+
+	<link rel="stylesheet" href="main/css/tree.css">
+	<script src="main/js/tree.js" defer></script>
+
+</head>
+<body id="swup" class="transition-fade">
+
+	<div class="div_main">
+
+		<table class="tbl1">
+			<tr class="col1">
+				<td class="name_td1" id="five01"><a href="person/Yrkovskiy_Yakov.html">Дмитро<br>Марушко</a></td>
+				<td class="space_td_norm"></td>
+				<td class="name_td1" id="five02"><a href="person/Yrkovskiy_Yakov.html">Юлія<br>Марушко</a></td>
+				<td class="space_td_norm"></td>
+				<td class="name_td1" id="five03"><a href="person/Yrkovskiy_Yakov.html">Оля<br>Ахрем</a></td>
+				<td class="space_td_min"></td>
+				<td class="name_td1" id="five04"><a href="person/Yrkovskiy_Yakov.html">Олексій<br>Ахрем</a></td>
+				<td class="space_td_norm"></td>
+				<td class="name_td1" id="five05"><a href="person/Yrkovskiy_Yakov.html">Маха<br>Бат</a></td>
+				<td class="space_td_norm"></td>
+				<td class="name_td1" id="five06"><a href="person/Yrkovskiy_Yakov.html">Тамара<br>Зеленчук</a></td>
+				<td class="space_td_norm"></td>
+				<td class="name_td1" id="five07"><a href="person/Yrkovskiy_Yakov.html">Євген<br>Кім</a></td>
+				<td class="space_td_min"></td>
+				<td class="name_td1" id="five08"><a href="person/Yrkovskiy_Yakov.html">Ольга<br>Кім</a></td>
+				<td class="space_td_norm"></td>
+				<td class="name_td1" id="five09"><a href="person/Yrkovskiy_Yakov.html">Сергій<br>Захарчук</a></td>
+				<td class="space_td_min"></td>
+				<td class="name_td1" id="five10"><a href="person/Yrkovskiy_Yakov.html">Андрій<br>Захарчук</a></td>
+				<td class="space_td_norm"></td>
+				<td class="name_td1" id="five11"><a href="person/Yrkovskiy_Yakov.html">Даша</a></td>
+				<td class="space_td_min"></td>
+				<td class="name_td1" id="five12"><a href="person/Yrkovskiy_Yakov.html">Антон<br>Захарчук</a></td>
+				<td class="space_td_min"></td>
+				<td class="name_td1" id="five13"><a href="person/Yrkovskiy_Yakov.html">Яна</a></td>
+			</tr>
+		</table>
+		<!-- <table>
+			<tr>
+				<td class="spc_tbl"><p></p></td>
+			</tr>
+		</table> -->
+
+		<table class="tbl2">
+			<tr class="col2">
+				<td class="name_td2" id="four01"><a href="person/Yrkovskiy_Yakov.html">Сергій<br>Марушко</a></td>
+				<td class="space_td_min"></td>
+				<td class="name_td2" id="four02"><a href="person/Yrkovskiy_Yakov.html">Ала<br>Марушко</a></td>
+				<td class="space_td_norm"></td>
+				<td class="name_td2" id="four03"><a href="person/Yrkovskiy_Yakov.html">Алекс<br>Ахрем</a></td>
+				<td class="space_td_min"></td>
+				<td class="name_td2" id="four04"><a href="person/Yrkovskiy_Yakov.html">Дмитро<br>Ахрем</a></td>
+				<td class="space_td_norm"></td>
+				<td class="name_td2" id="four05"><a href="person/Yrkovskiy_Yakov.html">Олена<br>Курманова</a></td>
+				<td class="space_td_norm"></td>
+				<td class="name_td2" id="four06"><a href="person/Yrkovskiy_Yakov.html">Жорик<br>Зеленчук</a></td>
+				<td class="space_td_min"></td>
+				<td class="name_td2" id="four07"><a href="person/Yrkovskiy_Yakov.html">Ірина<br>Зеленчук</a></td>
+				<td class="space_td_norm"></td>
+				<td class="name_td2" id="four08"><a href="person/Yrkovskiy_Yakov.html">Сергій<br>Захарчук</a></td>
+				<td class="space_td_min"></td>
+				<td class="name_td2" id="four09"><a href="person/Yrkovskiy_Yakov.html">Євгеній<br>Захарчук</a></td>
+			</tr>
+		</table>
+
+		<table class="tbl3">
+			<tr class="col3">
+				<td class="name_td3" id="three01"><a href="person/Yrkovskiy_Yakov.html">Адік</a></td>
+				<td class="space_td_min"></td>
+				<td class="name_td3" id="three02"><a href="person/Yrkovskiy_Yakov.html">Галина<br>Марушко</a></td>
+				<td class="space_td_min"></td>
+				<td class="name_td3" id="three03"><a href="person/Yrkovskiy_Yakov.html">Анатолій</a></td>
+				<td class="space_td_norm"></td>
+				<td class="name_td3" id="three04"><a href="person/Yrkovskiy_Yakov.html">Тамара</a></td>
+				<td class="space_td_min"></td>
+				<td class="name_td3" id="three05"><a href="person/Yrkovskiy_Yakov.html">Соня</a></td>
+				<td class="space_td_min"></td>
+				<td class="name_td3" id="three06"><a href="person/Yrkovskiy_Yakov.html">Лідія</a></td>
+				<td class="space_td_min"></td>
+				<td class="name_td3" id="three07"><a href="person/Yrkovskiy_Yakov.html">Євгенія</a></td>
+				<td class="space_td_min"></td>
+				<td class="name_td3" id="three08"><a href="person/Yrkovskiy_Yakov.html">Борис<br>Захарчук</a></td>
+				<td class="space_td_fam" id="three08_09"></td>
+				<td class="name_td3" id="three09"><a href="person/Yrkovskiy_Yakov.html">Ніна<br>Сташенко</a></td>
+				<td class="space_td_min"></td>
+				<td class="name_td3" id="three10"><a href="person/Yrkovskiy_Yakov.html">мамин<br>брат</a></td>
+			</tr>
+		</table>
+
+		<table class="tbl4">
+			<tr class="col4">
+				<!-- <td class="name_td4" id="two01"><a href="person/Yrkovskiy_Yakov.html">Петро<br>Захарчук</a></td>
+				<td class="space_td_min"></td> -->
+				<td class="name_td4" id="two02"><a href="person/Yrkovskiy_Yakov.html">Василь</a></td>
+				<td class="space_td_norm"></td>
+				<td class="name_td4" id="two03"><a href="person/Yrkovskiy_Yakov.html">Марина</a></td>
+				<td class="space_td_min"></td>
+				<td class="name_td4" id="two04"><a href="person/Yrkovskiy_Yakov.html">Маланья</a></td>
+				<td class="space_td_min"></td>
+				<td class="name_td4" id="two05"><a href="person/Yrkovskiy_Yakov.html">Федора</a></td>
+				<td class="space_td_min"></td>
+				<td class="name_td4" id="two06"><a href="person/Yrkovskiy_Yakov.html">Нікодим</a></td>
+				<td class="space_td_fam" id="two06_07"></td>
+				<td class="name_td4" id="two07"><a href="person/Yrkovskiy_Yakov.html">Зіна</a></td>
+				<td class="space_td_min"></td>
+				<td class="name_td4" id="two08"><a href="person/Yrkovskiy_Boris.html">Юрковский<br>Борис</a></td>
+				<td class="space_td_min"></td>
+				<td class="name_td4" id="two09"><a href="person/Yrkovskaya_Sofiya.html">Юрковская<br>София</a></td>
+			</tr>
+		</table>
+
+		<table class="tbl5">
+			<tr class="col5">
+				<td class="name_td5" id="one01"><a href="person/Yrkovskiy_Yakov.html">Захарчук<br>Федор</a></td>
+				<td class="space_td_fam" id="one01_02"></td>
+				<td class="name_td5" id="one02"><a href="person/Yrkovskiy_Yakov.html">Сгожена</a></td>
+				<td class="space_td_norm"></td>
+				<td class="name_td5" id="one03"><a href="person/Yrkovskiy_Yakov.html">Юрковский<br>Яков</a></td>
+				<td class="space_td_fam" id="one03_04"></td>
+				<td class="name_td5" id="one04"><a href="person/Zelinskaya_Ekaterina.html">Зелинская<br>Екатерина</a></td>
+			</tr>
+		</table>
+	
+	</div>
+
+	<a href="index.html"><img class="bbutton paused" src="person/img/double-left.gif" alt="Alt"></a>
+
+</body>
+</html>
